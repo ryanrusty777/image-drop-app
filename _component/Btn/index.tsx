@@ -16,7 +16,7 @@ export default function Btn( { handleBtn, designBtn }: Props) {
             <ImageDropPreview />
             <button
             onClick={handleBtn}
-            className="absolute top-0 right-5 bg-black/50 p-2"
+            className="absolute top-0 right-5 bg-black/50 p-2 text-white"
             >
                 {t("done")}
             </button>
@@ -24,7 +24,7 @@ export default function Btn( { handleBtn, designBtn }: Props) {
         :
         <div 
         onClick={handleBtn}
-        className="grid content-center bg-white/50 m-4"
+        className="grid content-center bg-white/50 m-4 text-white"
         >
             <button>{t("design")}</button>
         </div> 

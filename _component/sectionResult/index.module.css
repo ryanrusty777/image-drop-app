@@ -10,7 +10,7 @@
   filter: drop-shadow(1px 8px 1rem #000);
   border: 5px solid #3C3636;
   border-radius: 15px;
-  margin: 3rem;
+  margin: 2rem 3rem;
   max-height: 575px;
   display: flex;
         flex-direction: column;
