@@ -1,0 +1,33 @@
+
+
+{
+    "hello": "Hello",
+    "colorSelection": "Color Selection",
+    "backgroundColorCode": "Background Color Code",
+    "titleArea": "Title Area",
+    "titleFontFamily": "Title Font Family",
+    "textArea": "Text Area",
+    "typeSomething": "Type something...",
+    "textColorCode": "Text Color Code",
+    "chooseFontFamily": "Choose Font Family",
+    "notoSans": "Noto Sans",
+    "xOffset": "X Offset",
+    "yOffset": "Y Offset",
+    "blurRadius": "Blur Radius",
+    "shadowColor": "Shadow Color",
+    "css": "CSS",
+    "copyCss": "📋 Copy CSS",
+    "design": "Design",
+    "done": "Done",
+     "copied": "✅Copied",
+     "language": "Language",
+     "hungarian": "Hungarian",
+     "japanese": "Japanese",
+     "english": "English",
+     "german": "German",
+     "gradientColor": "Gradient Color",
+     "singleColor": "Single Color",
+     "top": "Top",
+     "bottom": "Bottom",
+     "changeImage": "Change Image"
+  }

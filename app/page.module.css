@@ -1,0 +1,28 @@
+.container {
+  height: 88vh;
+  width: 100%;
+}
+.desktop {
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.mobile {
+    height: 65vh;
+  padding: 0 3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+    height: 100vh;
+  }
+  .desktop {
+    width: 50%;
+  }
+}
