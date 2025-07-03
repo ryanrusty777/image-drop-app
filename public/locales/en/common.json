@@ -29,5 +29,7 @@
      "singleColor": "Single Color",
      "top": "Top",
      "bottom": "Bottom",
-     "changeImage": "Change Image"
+     "selectImage": "Select Image",
+     "or": "or",
+    "dropImage": "Drop image"
   }

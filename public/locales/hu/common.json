@@ -25,5 +25,7 @@
     "singleColor": "Egyszínű",
     "top": "Fent",
     "bottom": "Lent",
-    "changeImage": "Kép módosítása"
+    "selectImage": "Kép kiválasztása",
+    "or": "vagy",
+    "dropImage": "Kép húzása"
   }

@@ -4,8 +4,13 @@ import { useImageDrop } from '@/context/ImageDropContext';
 import ShadowPreview from '../ShadowPreview';
 import { useTranslation } from 'react-i18next';
 import styles from "./index.module.css"
+import ClientLangWrapper from '@/app/ClientLangWrapper';
 
 export default function ImageDropPreview() {
+
+  const handleDragOver = (e: React.DragEvent) => {
+  e.preventDefault();
+};
 
   const fileInputRef = useRef<HTMLInputElement | null>(null)
   
@@ -30,26 +35,23 @@ export default function ImageDropPreview() {
   const { t } = useTranslation("common");
 
   return (
-      <>
-        <div
-        onDrag={handleDrop} 
-        onDrop={handleDrop}
-        className={styles.wrapper}
-        >
+      <ClientLangWrapper>
+        <div className={styles.wrapper}>
             <div className={styles.imageBox}>
             {imageSrc?
             <div 
             onClick={handleClick}
+            onDrag={handleDrop} 
+            onDrop={handleDrop}
+            onDragOver={handleDragOver}
             className='cursor-pointer'
             >
 
-                <p>{t("changeImage")}</p>
+                <p>{t("selectImage")}  {t("or")} {t("dropImage")}</p>
                 <input
                 type='file'
-                accept='.jpg, .png, .webp'
+                accept='.jpg, .png, .webp, .heic'
                 onChange={handleChange}
-                onDrag={handleDrop} 
-                onDrop={handleDrop}
                 ref={fileInputRef}
                 className="hidden"
                 />
@@ -57,7 +59,7 @@ export default function ImageDropPreview() {
         : 
         <input
             type='file'
-            accept='.jpg, .png, .webp'
+            accept='.jpg, .png, .webp, .heic'
             onChange={handleChange}
             className="hidden"
             />
@@ -120,7 +122,7 @@ export default function ImageDropPreview() {
         
         </div>
         
-      </>
+      </ClientLangWrapper>
         
   )
 }

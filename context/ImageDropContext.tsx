@@ -41,11 +41,6 @@ const ImageDropContext = createContext<ImageDropContextType | undefined>(undefin
           if (file) readSrc(file); 
         }
 
-        const fileInputRef = useRef<HTMLInputElement | null>(null);
-        const handleClick = () => {
-          fileInputRef.current?.click();
-        }
-
   const handleBg = (e:React.ChangeEvent<HTMLInputElement>) => {
     setBg(e.target.value);
   } 

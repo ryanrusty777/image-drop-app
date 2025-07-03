@@ -26,5 +26,7 @@
     "singleColor": "Einzelfarbe",
     "top": "Oben",
     "bottom": "Unten",
-     "changeImage": "Bild ändern"
+    "selectImage": "Bild auswählen",
+    "or": "oder",
+    "dropImage": "Bild hier ablegen"
   }
